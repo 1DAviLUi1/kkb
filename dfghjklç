@@ -1,0 +1,70 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+	int a;
+	int b;
+	int soma;
+	char comando;
+	int multiplicacao;
+	float divisao;
+	int s;
+	int m;
+	int d;
+	int l;
+	int subtracao;
+	printf("DIGITE UM COMANDO");
+	scanf("%s", &comando);
+	if (comando == 's'){
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &a);
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &b);
+		soma = a+b;
+		printf("Sua soma é: %d", soma);
+	}
+
+
+	else if	(comando == 'd'){
+
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &a);
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &b);
+		multiplicacao = a/b;
+		printf("a sua divisao é: %f", divisao);
+
+	}
+	else if	(comando == 'm'){
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &a);
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &b);
+		multiplicacao = a*b;
+		printf("a sua multiplicacao é %d", multiplicacao);
+	}
+		else if	(comando == 'l'){
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &a);
+		printf("DIGITE UM NUMERO");
+		scanf("%d", &b);
+		subtracao = a-b;
+		printf("a sua subtracao é %d", subtracao);
+	}
+
+    else {
+        printf("voce é trouxa");
+        }
+	return 0;
+
+
+
+}
