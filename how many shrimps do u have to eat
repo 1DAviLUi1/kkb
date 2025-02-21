@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+int main()
+{
+    float a;
+    float b;
+    float c;
+    float resultado;
+    char comando;
+    
+    do{
+        printf("Digita um comando valido =P");
+        scanf("%c", &comando);
+    }
+    while(comando != 'd' && comando != 's' && comando != 'm' && comando != 'l' && comando != 'p');
+    
+    switch(comando){
+        case 's':
+        printf("digite um numero");
+        scanf ("%f", &a);
+        printf("digite um numero");
+        scanf ("%f", &b);
+        printf("digite um numero");
+        scanf ("%f", &c);
+        resultado = a+ b+ c;
+        printf("A sua soma é: %f", resultado);
+    }
+     switch(comando){
+        case 'd':
+        printf("digite um numero");
+        scanf ("%f", &a);
+        printf("digite um numero");
+        scanf ("%f", &b);
+        printf("digite um numero");
+        scanf ("%f", &c);
+        resultado = a/ b/ c;
+        printf("A sua divisao é: %f", resultado);
+    }
+     switch(comando){
+        case 'l':
+        printf("digite um numero");
+        scanf ("%f", &a);
+        printf("digite um numero");
+        scanf ("%f", &b);
+        printf("digite um numero");
+        scanf ("%f", &c);
+        resultado = a- b- c;
+        printf("A sua subtracao é: %f", resultado);
+    }
+     switch(comando){
+        case 'm':
+        printf("digite um numero");
+        scanf ("%f", &a);
+        printf("digite um numero");
+        scanf ("%f", &b);
+        printf("digite um numero");
+        scanf ("%f", &c);
+        resultado = a* b* c;
+        printf("A sua multiplicacao é %f", resultado);
+    }
+    switch(comando){
+        case 'p':
+        printf("digite um numero");
+        scanf ("%f", &a);
+        printf("digite um numero");
+        scanf ("%f", &b);
+        resultado = a* (b/100);
+        printf("A sua porcentagem é %f", resultado);
+    }
+
+	return 0;
+}
