@@ -1,0 +1,68 @@
+/*TERMINAR EM CASA ME BOTO PRA PENSA NO TRABALHO
+AGORA SAO 21H50  LEMBRA DE APAGAR ESSA MERDA SOU ESQUIZOFRENICO TO ESCREVENDO PRA MIM MESMO (eu prefiro :P do q esse abaixo mas ja espamei isso ai)
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+=p
+*/
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    int numero;
+    char SimouNao;
+    char SimouNao2;
+    
+    printf("Vamos jogar um jogo!\n");
+    printf("Vou descobrir o numero de 1 a 10 q voce está pensando!\n");
+    printf("Esta disposto a isso?\n");
+    printf("Sim ou nao???\n");
+    printf("DIGITE SUA RESPOSTA s ou n?\n");
+    scanf("%c", &SimouNao);
+    
+    switch(SimouNao){
+    case 's':
+    printf("Pense em um numero entre 1 e 50\n");
+    printf("Pensou? S ou n?\n");
+    printf("DIGITE SUA RESPOSTA s ou n?\n");
+    scanf("%c", &SimouNao2);
+    }
+    switch(SimouNao){
+    case 'n':
+    printf("eu nem queria mesmo");
+      }
+    switch(SimouNao2){
+    case 's':
+    printf("eu cansei de codar outro dia eu termino a brincadeira, foi bom jogar com vc");
+    }
+    switch(SimouNao2){
+    case 'n':
+    printf("Eu nem queria mesmo");
+    }
+    
+    switch(SimouNao){
+    case 'n':
+    printf("Jaé");
+    break;
+    }
+    
+    
+    
+    return 0;
+
+}
