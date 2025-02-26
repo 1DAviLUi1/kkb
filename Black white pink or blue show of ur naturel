@@ -5,6 +5,7 @@ int main() {
     char SimouNao;
     char SimouNao2;
     char SimouNaoX;
+    char SimouNaoY;
     char ga;
     
     printf("Vamos jogar um jogo!\n");
@@ -23,7 +24,7 @@ int main() {
     }
     switch(SimouNao){
     case 'n':
-    printf("eu nem queria mesmo");
+    printf("#LULALIVRE");
       }
     switch(SimouNao2){
     case 's':
@@ -38,19 +39,28 @@ int main() {
     printf("Pensou?\n s ou n?\n");
     scanf(" %c", &ga);
     }
-    switch(ga){
-    case 's':
+    if(ga == 's'){
     printf("eu vi que voce é meio burro \n mas tenta pega esse numero que voce pensou e multiplica por 2\n");
     printf("multiplicou?\n Digite s ou n");
      scanf(" %c", &SimouNaoX);
     }
     switch(SimouNaoX){
     case 's':
-    printf("p-p");
+    printf("Agora divide esse numero por 4 \n");
+    printf("Dividiu?\n Digite s ou n");
+    scanf(" %c", &SimouNaoY);
     }
     switch(SimouNaoX){
     case 'n':
     printf("#PENSANDO");
     }
+    switch(SimouNaoY)
+    case 's':
+    printf("Agora pega e vai tomar no seu cu :P");
+    }
+    
+    switch(SimouNaoY)
+    case 'n':
+    printf("https://www.youtube.com/watch?v=TJL4Y3aGPuA");
 }
-}
+
