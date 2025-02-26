@@ -2,23 +2,24 @@
 
 int main() {
     
-    int numero;
     char SimouNao;
     char SimouNao2;
+    char SimouNaoX;
+    char ga;
     
     printf("Vamos jogar um jogo!\n");
     printf("Vou descobrir o numero de 1 a 10 q voce está pensando!\n");
     printf("Esta disposto a isso?\n");
     printf("Sim ou nao???\n");
     printf("DIGITE SUA RESPOSTA s ou n?\n");
-    scanf("%c", &SimouNao);
+    scanf(" %c", &SimouNao);
     
     switch(SimouNao){
     case 's':
     printf("Pense em um numero entre 1 e 50\n");
     printf("Pensou? S ou n?\n");
     printf("DIGITE SUA RESPOSTA s ou n?\n");
-    scanf("%c", &SimouNao2);
+    scanf(" %c", &SimouNao2);
     }
     switch(SimouNao){
     case 'n':
@@ -26,21 +27,30 @@ int main() {
       }
     switch(SimouNao2){
     case 's':
-    printf("eu cansei de codar outro dia eu termino a brincadeira, foi bom jogar com vc");
+    printf("Agora pega esse numero e multiplica por 2\n");
+    printf("multiplicou?\n s ou n?\n");
+    scanf(" %c", &SimouNaoX);
     }
     switch(SimouNao2){
     case 'n':
-    printf("Eu nem queria mesmo");
+    while(ga != 's'){
+    printf("Vou te dar mais 15 horas pra se decidir\n");
+    printf("Pensou?\n s ou n?\n");
+    scanf(" %c", &ga);
     }
-    
-    switch(SimouNao){
+    switch(ga){
+    case 's':
+    printf("eu vi que voce é meio burro \n mas tenta pega esse numero que voce pensou e multiplica por 2\n");
+    printf("multiplicou?\n Digite s ou n");
+     scanf(" %c", &SimouNaoX);
+    }
+    switch(SimouNaoX){
+    case 's':
+    printf("p-p");
+    }
+    switch(SimouNaoX){
     case 'n':
-    printf("Jaé");
-    break;
+    printf("#PENSANDO");
     }
-    
-    
-    
-    return 0;
-
+}
 }
