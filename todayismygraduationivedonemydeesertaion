@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(){
+    
+    int f, v, ;
+    int comando;
+    printf("Digite f v ");
+    scanf("%d %d", &a, &b);
+    printf("Escolha: \n 1) -Soma\n 2) -Produto 3) -Subtracao");
+    scanf("%d", &menu);
+    
+    switch(menu)
+    {
+        do{
+        printf("Escreve o comando\n");
+        scanf("%c", &comando);
+    }
+        while 
+            (comando != '1' && comando != '2' && c'omando != '3');
+    
+        case 1:
+            printf(" A soma eh %d\n", a+ b);
+            break;
+        case 2:
+            printf(" O produto eh %d\n", a* b);
+            break;
+        case 3:
+            printf("%d-%d=%d\n", a, b, a- b);
+            break;
+    }
+    
+}
