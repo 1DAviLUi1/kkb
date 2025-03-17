@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+void limpavrido(){
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
+    
+}
+int main() {
+    int chronic;
+    printf("Querem copiar oq eu fiz ano retrasado.\n");
+    printf("aperte 1 para limpar o buffer e 2 para ir se fuder");
+    scanf(" %d", &chronic);
+    
+    if (chronic == 1){
+        limpavrido()
+        printf("Buffer limpo o.O UAU O.o");
+    }
+    else if(chronic == 2){
+        printf(";)       Já sabe né      ;)");
+    }
+    else{
+        printf("Programa finalizado :/ (pq o troxa digito o comando errado que nem existe, pabens)");
+        exit(0);
+    }
+
+
+    return 0;
+}
