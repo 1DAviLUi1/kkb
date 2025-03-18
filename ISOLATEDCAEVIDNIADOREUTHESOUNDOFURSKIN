@@ -1,0 +1,132 @@
+#include <stdio.h>
+#include <stdlib.h>
+    float preco = 0;
+    char produto[100];
+    int qadprod = 0, produtocad = 0;
+    void glitter(){
+        char comando, cde, cdv, cf, escpod, escpod2;
+        int despesas, receita, saldo;
+        printf("Menu Principal:\n 1 - Controle de Estoque \n 2 - Controle de Venda \n 3 - Controle Financeiro \n 4 - Encerrar programa\nDigite: ");
+        scanf(" %c", &comando);
+                    switch (comando) {
+                        case '1':
+                            printf("Controle de estoque o.O:\n");
+                            printf(" 1 - Cadastrar um produto\n 2 - Visualizar produtos\n 3 - Voltar ao menu principal\n");
+                            scanf(" %c", &cde);
+                            if (cde == '1') {
+                                while (1) {
+                                    printf("Cadastre o nome do produto: ");
+                                    scanf("%s", produto);
+                                    printf("Quantidade do produto disponivel no estoque:");
+                                    scanf( "%d", &qadprod);
+                                    produtocad = 1;
+                                    printf("Produto cadastrado!\n");
+                                    printf(" 1 - Cadastrar outro produto\n 2 - Voltar ao controle de estoque\n 3 - Voltar ao menu principal\n");
+                                    printf("Digite: ");
+                                    scanf(" %c", &cde);
+                                    if (cde == '1') {
+                                        continue;
+                            }
+                                    else if (cde == '2') {
+                                        break;
+                            }
+                                    else if (cde == '3') {
+                                        glitter();
+                            }
+                        }
+                    }
+                            else if (cde == '2') {
+                                    printf("Caneta - 50 unidades\n");
+                                    printf("Canetada - 30 unidades\n");
+                                    printf("Canetinha - 20 unidades \n");
+                                    printf("Caneto - 15 unidades\n");
+                                if (produtocad != 0) {
+                                    printf("%s - %d unidades\n", produto, qadprod);
+                        }
+                                else {
+                                    printf(";P\n");
+                        }
+                    }           else if (cde == '3') {
+                                    glitter();
+                    }
+                }
+                switch (comando){
+                    case '2':
+                    printf("Controle de vendas p-p\n");
+                    printf(" 1 - Colocar preco\n 2 - Visualizar precos\n 3 - Vender o produto\n 4 - Voltar ao menu principal\n");
+                    scanf(" %c", &cdv);
+                    if (cdv == '1'){
+                        if (produtocad !=0){
+                        printf(" %s:R$", produto);
+                        scanf(" %f", &preco);
+                        printf("Preco cadastrado;)\n");
+                        }
+                        else{
+                            printf("nenhum produto cadastrado recentemente :(\n");
+                        }
+                    }
+                    else if (cdv == '2'){
+                        printf("Produtos e preco:\n");
+                        printf("Caneta - R$10.00\n");
+                        printf("Canetada - R$20.00\n");
+                        printf("Canetinha - R$15.00 \n");
+                        printf("Caneto - R$25.00\n");
+                        if (produtocad !=0) {
+                            printf("%s - R$%.2f\n", produto, preco);
+                         }
+                        else{}
+                        }
+                    else if(cdv == '3'){
+                        printf("1 - Caneta - R$10.00\n");
+                        printf("2 - Canetada - R$20.00\n");
+                        printf("3 - Canetinha - R$15.00 \n");
+                        printf("5 - Caneto - R$25.00\n");
+                        if (produtocad !=0) {
+                            printf("5 - %s - R$%.2f\n", produto, preco);
+                         }
+                        else{}
+                        }
+                        printf("Selecione o produto q vai vender\n");
+                        scanf(" %d", &escpod);
+                        switch(escpod == '1'){
+                            printf("1 - Caneta - R$10.00\n");
+                            printf("selecione a quantidade: ");
+                            scanf(" %d", &escpod2);
+                    }
+                    else if (cdv == '4'){
+                        glitter();
+                    }
+                }
+             switch (comando){
+                 case '3':
+                    printf("Controle financeiro e8p:\n");
+                    printf(" 1 - Registrar despesas\n 2 - Registrar receitas \n 3 - Consultar Saldo\n 4 - voltar ao menu principal\n");
+                    scanf(" %c", &cf);
+                    if(cf == '1'){
+                        printf("Digite suas despesas\n");
+                        scanf(" %d", &despesas);
+                    }
+                    else if(cf == '2'){
+                        printf("Digite sua receita\n");
+                        scanf(" %d", &receita);
+                    }
+                    else if(cf == '3'){
+                        saldo = receita - despesas;
+                        printf(" Seu saldo eh:%d\n", saldo);
+                    }
+                    else if(cf == '4'){
+                        glitter();
+                    }
+             }
+             switch (comando){
+                case '4':
+                    printf(" Tbom entao *-*");
+                    exit (0);
+             }
+}
+int main() {
+    while (1) {
+        glitter();
+    }
+    return 0;
+}
